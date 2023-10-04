@@ -1,32 +1,98 @@
 Type,Full Account Name,Account Name,Account Code,Description,Account Colour,Notes,Symbol,Namespace,Hidden,Tax Info,Placeholder
 ASSET,Assets,Assets,,Assets,,,AUD,CURRENCY,F,F,T
 ASSET,Assets:Current Assets,Current Assets,,Current Assets,,,AUD,CURRENCY,F,F,T
-CASH,Assets:Current Assets:Cash in Wallet,Cash in Wallet,,Cash in Wallet,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Current Assets:G Funds available,G Funds available,,Pay to Long term savings,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Current Assets:G Funds available:G clothing available,G clothing available,,,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Current Assets:G Funds available:G Misc. spending available,G Misc. spending available,,,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Current Assets:S Funds Available,S Funds Available,,Pay to Long term savings,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Current Assets:S Funds Available:S Clothing available,S Clothing available,,,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Current Assets:S Funds Available:S Misc. spending available,S Misc. spending available,,,,,AUD,CURRENCY,F,F,F
 BANK,Assets:Current Assets:Checking Account,Checking Account,,Checking Account,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Checking Account:Bills Checking Account,Bills Checking Account,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Checking Account:Shared Income Checking Account,Shared Income Checking Account,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Checking Account:Sydney allowance,Sydney allowance,,,,,AUD,CURRENCY,F,F,F
 BANK,Assets:Current Assets:Savings Account,Savings Account,,Savings Account,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings,Bills Savings,,,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Current Assets:Savings Account:Bills Savings:Gym,Gym,,,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Current Assets:Savings Account:Bills Savings:Toiletries,Toiletries,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Car,Car,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Car:Car Maintenance,Car Maintenance,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Car:Car Rego,Car Rego,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Car:Fuel Fares & Parking,Fuel Fares & Parking,,"Scooters,bicycles,ferries,gogets,busses,trains,trams",,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Car:Vehicle Insurance,Vehicle Insurance,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Groceries,Groceries,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Groceries:Groceries Pending Next Fortnight,Groceries Pending Next Fortnight,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Groceries:Groceries Week 2,Groceries Week 2,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Home maintenance,Home maintenance,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:House,House,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:House:Body Corp Fees,Body Corp Fees,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:House:Content's Insurance,Content's Insurance,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:House:Rates,Rates,,Brisbane City Council ,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Medical,Medical,,Glasses/Medication/Doctors,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Phone & Data,Phone & Data,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Streaming services,Streaming services,,disney/binge/jellyfin,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Utilities,Utilities,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Utilities:Electricity,Electricity,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Utilities:Gas,Gas,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Utilities:Internet,Internet,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Bills Savings:Utilities:Water,Water,,Hot water & sewrage,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Coffee savings,Coffee savings,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Credit card savings,Credit card savings,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Holiday savings,Holiday savings,,Currently for Flights,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Long Term Savings,Long Term Savings,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Long Term Savings:Bankwest Long term savings,Bankwest Long term savings,,,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Savings Account:Long Term Savings:G Parents home deposit savings,G Parents home deposit savings,,,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Fixed Assets,Fixed Assets,,Fixed Assets,,,AUD,CURRENCY,F,F,T
+ASSET,Assets:Fixed Assets:House,House,,House,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Fixed Assets:Other Asset,Other Asset,,Other Asset,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Fixed Assets:Vehicle,Vehicle,,Vehicle,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Fixed Assets:Furniture debt receivable,Furniture debt receivable,,Pay to Long term savings,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Investments,Investments,,Investments,,,AUD,CURRENCY,F,F,T
+BANK,Assets:Investments:Brokerage Account,Brokerage Account,,Brokerage Account,,,AUD,CURRENCY,F,F,T
+ASSET,Assets:Investments:Brokerage Account:CDIA Joint account,CDIA Joint account,,Bond,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Investments:Brokerage Account:Market Index,Market Index,,Market Index,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Investments:Brokerage Account:Mutual Fund,Mutual Fund,,Mutual Fund,,,AUD,CURRENCY,F,F,F
+ASSET,Assets:Investments:Brokerage Account:Stock,Stock,,Stock - Joint Names,,,AUD,CURRENCY,F,F,F
+STOCK,Assets:Investments:Brokerage Account:Stock:GRNV,GRNV,,VanEck MSCI Australian Sustainable Equity ETF,,,GRNV,ASX,F,F,F
+STOCK,Assets:Investments:Brokerage Account:Stock:IEU,IEU,IEU,iSHARES EUROPE ETF,,,IEU,ASX,F,F,F
+STOCK,Assets:Investments:Brokerage Account:Stock:UMAX,UMAX,UMAX,BETASHARES S&P 500 YIELD MAXIMISER FUND (MANAGED FUND),,,UMAX,ASX,F,F,F
+STOCK,Assets:Investments:Brokerage Account:Stock:WXOZ,WXOZ,WXOZ,SPDR S&P WORLD EX AUSTRALIA FUND,,,WXOZ,ASX,F,F,F
 LIABILITY,Liabilities,Liabilities,,Liabilities,,,AUD,CURRENCY,F,F,T
 CREDIT,Liabilities:Credit Card,Credit Card,,Credit Card,,,AUD,CURRENCY,F,F,F
+LIABILITY,Liabilities:Home Loans,Home Loans,,Loans,,,AUD,CURRENCY,F,F,T
+LIABILITY,Liabilities:Home Loans:CBA Home Loan,CBA Home Loan,,Mortgage Loan,,,AUD,CURRENCY,F,F,F
+LIABILITY,Liabilities:Home Loans:G Parents Home loan Deposit,G Parents Home loan Deposit,,,,,AUD,CURRENCY,F,F,F
+LIABILITY,Liabilities:Home Loans:Vehicle Loan,Vehicle Loan,,Vehicle Loan,,,AUD,CURRENCY,F,F,F
 INCOME,Income,Income,,Income,,,AUD,CURRENCY,F,F,T
 INCOME,Income:Bonus,Bonus,,Bonus,,,AUD,CURRENCY,F,F,F
+INCOME,Income:Dividend Income,Dividend Income,,Dividend Income,,,AUD,CURRENCY,F,F,F
 INCOME,Income:Gifts Received,Gifts Received,,Gifts Received,,,AUD,CURRENCY,F,F,F
 INCOME,Income:Interest Income,Interest Income,,Interest Income,,,AUD,CURRENCY,F,F,T
+INCOME,Income:Interest Income:Bond Interest,Bond Interest,,Bond Interest,,,AUD,CURRENCY,F,F,F
 INCOME,Income:Interest Income:Checking Interest,Checking Interest,,Checking Interest,,,AUD,CURRENCY,F,F,F
 INCOME,Income:Interest Income:Other Interest,Other Interest,,Other Interest,,,AUD,CURRENCY,F,F,F
 INCOME,Income:Interest Income:Savings Interest,Savings Interest,,Savings Interest,,,AUD,CURRENCY,F,F,F
 INCOME,Income:Other Income,Other Income,,Other Income,,,AUD,CURRENCY,F,F,F
+INCOME,Income:Other Income:G Paying money back,G Paying money back,,,,,AUD,CURRENCY,F,F,F
+INCOME,Income:Other Income:S Paying Money back,S Paying Money back,,,,,AUD,CURRENCY,F,F,F
 INCOME,Income:Salary,Salary,,Salary,,,AUD,CURRENCY,F,F,F
+INCOME,Income:Streaming,Streaming,,,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses,Expenses,,Expenses,,,AUD,CURRENCY,F,F,T
 EXPENSE,Expenses:Adjustment,Adjustment,,Adjustment,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Auto,Auto,,Auto,,,AUD,CURRENCY,F,F,T
+EXPENSE,Expenses:Auto:Depreciation,Depreciation,,,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Auto:Fees,Fees,,Fees,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Auto:Fuel,Fuel,,"Gas, diesel, LPG …",,"Create subaccounts for each used type, if desired.",AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Auto:Parking,Parking,,Parking,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Auto:Repair and Maintenance,Repair and Maintenance,,Repair and Maintenance,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Auto:Tolls,Tolls,,,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Bank Service Charge,Bank Service Charge,,Bank Service Charge,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Books,Books,,Books,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Cable,Cable,,Cable,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Charity,Charity,,Charity,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Clothes,Clothes,,Clothes,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Coffee,Coffee,,,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Commissions,Commissions,,Commissions,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Computer,Computer,,Computer,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Dining,Dining,,Dining,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Education,Education,,Education,,,AUD,CURRENCY,F,F,F
@@ -34,25 +100,56 @@ EXPENSE,Expenses:Entertainment,Entertainment,,Entertainment,,,AUD,CURRENCY,F,F,T
 EXPENSE,Expenses:Entertainment:Music/Movies,Music/Movies,,Music/Movies,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Entertainment:Recreation,Recreation,,Recreation,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Entertainment:Travel,Travel,,Travel,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Furniture,Furniture,,,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Gifts,Gifts,,Gifts,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Groceries,Groceries,,Groceries,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Grooming,Grooming,,,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Gym or Sport,Gym or Sport,,,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Hobbies,Hobbies,,Hobbies,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Holidays,Holidays,,,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Home Improvements,Home Improvements,,,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Home Repair,Home Repair,,Home Repair,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:House,House,,,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:House:Rates,Rates,,,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Insurance,Insurance,,Insurance,,,AUD,CURRENCY,F,F,T
-EXPENSE,Expenses:Insurance:Auto Insurance,Auto Insurance,,Auto Insurance,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Insurance:Health Insurance,Health Insurance,,Health Insurance,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Insurance:Home & Contents Insurance,Home & Contents Insurance,,Home Insurance,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Insurance:Life Insurance,Life Insurance,,Life Insurance,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Insurance:Rental Insurance,Rental Insurance,,Rental Insurance,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Insurance:Vehicle Insurance,Vehicle Insurance,,Auto Insurance,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Interest,Interest,,Interest,,,AUD,CURRENCY,F,F,T
+EXPENSE,Expenses:Interest:Mortgage Interest,Mortgage Interest,,Mortgage Interest,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Interest:Vehicle Loan Interest,Vehicle Loan Interest,,Vehicle Loan Interest,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Internet,Internet,,,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Laundry/Dry Cleaning,Laundry/Dry Cleaning,,Laundry/Dry Cleaning,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Medical Expenses,Medical Expenses,,Medical Expenses,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Medical Expenses:Private health,Private health,,,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Miscellaneous,Miscellaneous,,Miscellaneous,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Online Services,Online Services,,Online Services,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Phone,Phone,,Phone,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Phone:Plan,Plan,,,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Public Transportation,Public Transportation,,Public Transportation,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Rent,Rent,,Rent,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Spending,Spending,,All fortnightly spending allowances,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Spending:G Spending,G Spending,,Expense fortnightly allowance,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Spending:S Spending,S Spending,,Expense fortnightly allowance,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Streaming,Streaming,,,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Subscriptions,Subscriptions,,Subscriptions,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Supplies,Supplies,,Supplies,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Sydney expenses,Sydney expenses,,Expenses incurred in relation to moving to Sydney,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Sydney expenses:Dining,Dining,,Dining out & dates due to Sydney move,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Sydney expenses:Furnishing,Furnishing,,,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Sydney expenses:Goget,Goget,,,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Sydney expenses:Internet,Internet,,,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Sydney expenses:Laundry,Laundry,,,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Sydney expenses:Public Transportation,Public Transportation,,,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Sydney expenses:Rental bond,Rental bond,,,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Sydney expenses:Wells street rent expense,Wells street rent expense,,,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Taxes,Taxes,,Taxes,,,AUD,CURRENCY,F,F,T
 EXPENSE,Expenses:Taxes:Federal,Federal,,Federal,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Taxes:Medicare,Medicare,,Medicare,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Taxes:Other Tax,Other Tax,,Other Tax,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Taxes:Property Tax,Property Tax,,Property Tax,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Taxes:Social Security,Social Security,,Social Security,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Taxes:State/Province,State/Province,,State/Province,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Utilities,Utilities,,Utilities,,,AUD,CURRENCY,F,F,T
@@ -60,5 +157,9 @@ EXPENSE,Expenses:Utilities:Electric,Electric,,Electric,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Utilities:Garbage collection,Garbage collection,,Garbage collection,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Utilities:Gas,Gas,,Gas,,,AUD,CURRENCY,F,F,F
 EXPENSE,Expenses:Utilities:Water,Water,,Water,,,AUD,CURRENCY,F,F,F
+EXPENSE,Expenses:Work Drinks,Work Drinks,,,,,AUD,CURRENCY,F,F,F
 EQUITY,Equity,Equity,,Equity,,,AUD,CURRENCY,F,F,T
 EQUITY,Equity:Opening Balances,Opening Balances,,Opening Balances,,,AUD,CURRENCY,F,F,F
+EQUITY,Equity:Revaluation,Revaluation,,,,,AUD,CURRENCY,F,F,F
+BANK,Imbalance-AUD,Imbalance-AUD,,,,,AUD,CURRENCY,F,F,F
+BANK,Orphan-AUD,Orphan-AUD,,,,,AUD,CURRENCY,F,F,F
