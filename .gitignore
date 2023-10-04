@@ -5,7 +5,8 @@ __pycache__/
 
 # C extensions
 *.so
-
+#Streamlit
+.streamlit
 # Distribution / packaging
 .Python
 build/
