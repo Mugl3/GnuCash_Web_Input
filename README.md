@@ -31,3 +31,7 @@ There are options for docker too, I will investigate this in the future.
 
 4. When you have downloaded your transactions clear the current log by clicking the checkbox and hitting clear. 
 5. You can start recording transactions again.
+
+**ToDo**
+Add cookies support for seamless login - https://discuss.streamlit.io/t/cookies-support-in-streamlit/16144
+Deploy via docker
