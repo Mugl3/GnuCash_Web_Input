@@ -4,6 +4,7 @@ import numpy as np
 import csv
 import os
 import pyautogui
+import datetime
 
 def check_password():
     """Returns `True` if the user had the correct password."""
@@ -62,9 +63,13 @@ if check_password():
         pyautogui.hotkey("ctrl","F5")
 
     def clicked():
-        output_file=f"""{date},{from_account},{to_account},{price}"""
+        id=str(datetime.datetime.now()).replace(" ","")
+        output_file1=f"""{id},{date},{from_account},-{price},{description}"""
+        output_file2=f"""{id},{date},{to_account},{price},{description}"""
         with open("transaction_output.csv",'a') as fd:
-            fd.write(output_file)
+            fd.write(output_file1)
+            fd.write("\n")
+            fd.write(output_file2)
             fd.write("\n")
 
     def clicked_transaction_clear():
@@ -85,6 +90,7 @@ if check_password():
     from_account=st.selectbox('Please choose from which account', accounts,None)
     to_account=st.selectbox('Please choose to which account', accounts,None)
     price=st.number_input('Insert a $ amount')
+    description=st.text_input("Please write a short transaction description")
     clicked=st.button("Save",on_click=clicked)
     reset=st.button("Reset",on_click=clicked_reset)
     clear_contents_check=st.checkbox("Clear transactions due to recon already done?")
