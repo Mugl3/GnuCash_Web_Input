@@ -80,7 +80,7 @@ if check_password():
 
     #Populate accounts with list of items selectable
     accounts=[]
-    with open('C:\\Users\\gusta\\Desktop\\streamlit_gnu_app\\account_tree.csv', newline='') as csvfile:
+    with open('account_tree.csv', newline='') as csvfile:
         datareader = csv.reader(csvfile, delimiter=',', quotechar='|')
         for row in datareader:
             accounts.append(row[1])
