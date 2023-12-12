@@ -71,6 +71,9 @@ if check_password():
             fd.write("\n")
             fd.write(output_file2)
             fd.write("\n")
+        from_account.index=0
+        to_account.index=0
+        price.value=None
 
     def clicked_transaction_clear():
         if clear_contents_check:
