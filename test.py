@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import csv
 import os
-import pyautogui
+#import pyautogui
 import datetime
 
 def check_password():
@@ -60,8 +60,9 @@ if check_password():
     st.download_button("Download transactions",get_data_to_download(),'user_transactions.csv')
 
     def clicked_reset():
-        pyautogui.hotkey("ctrl","F5")
-
+        #pyautogui.hotkey("ctrl","F5")
+        pass
+        
     def clicked():
         id=str(datetime.datetime.now()).replace(" ","")
         output_file1=f"""{id},{date},{from_account},-{price},{description}"""
