@@ -1,2 +1,2 @@
-BANK	Assets:ExampleAccount1
-EXPENSE	Expense:FoodExample2
+BANK,Assets:Current Assets:Checking Account,Checking Account,,Checking Account,,,AUD,CURRENCY,F,F,F
+BANK,Assets:Current Assets:Checking Account:Bills Checking Account,Bills Checking Account,,,,,AUD,CURRENCY,F,F,F
