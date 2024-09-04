@@ -161,3 +161,4 @@ cython_debug/
 transaction_output.csv
 account_tree.csv
 account_tree.csv
+.venv/
