@@ -127,7 +127,7 @@ if check_password():
         time.sleep(1)
         msg.toast('Saving transaction...')
         st.balloons()
-        clicked_transaction_clear()
+        clicked_reset()
 
     def clicked_transaction_clear():
         if clear_contents_check:
