@@ -7,7 +7,22 @@ import pyautogui
 import datetime
 import polars as pl
 from streamlit_cookies_controller import CookieController
+import time
 
+st.set_page_config(layout="wide")
+
+st.markdown("""
+<style>
+
+.block-container
+{
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    margin-top: 2rem;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 controller = CookieController()
 
@@ -108,10 +123,19 @@ if check_password():
             fd.write(output_file2)
             fd.write("\n")
 
+        msg = st.toast('Getting ready to finalise transaction...')
+        time.sleep(1)
+        msg.toast('Saving transaction...')
+        st.balloons()
+        clicked_transaction_clear()
+
     def clicked_transaction_clear():
         if clear_contents_check:
-            st.write('Clearing contents of transactions now')
+            msg = st.toast('Getting ready to delete transactions...')
+            time.sleep(1)
+            msg.toast('Transactions deleted...')
             open("transaction_output.csv",'w').close()
+            st.snow()
     st.title('Enter new transaction')
 
     #Populate accounts with list of items selectable
@@ -189,10 +213,10 @@ if check_password():
     date=st.date_input("Transaction date",key='key_date_input')
     from_account_type=st.selectbox('Please choose from which account type', options=accounts_type,key='key_from_account_type',on_change=update_accounts, kwargs={'from_or_to':'key_from_account_type'})
     from_account=st.selectbox('Please choose from which account', options=st.session_state['from_accounts'],key='key_from_account')
-    st.text(st.session_state['from_account_full'], help='Full account details that will be used')
+    st.text_area('From Account label',st.session_state['from_account_full'], help='Full account details that will be used',label_visibility='collapsed',disabled=True,height =10)
     to_account_type=st.selectbox('Please choose to which account type', options=accounts_type,key='key_to_account_type',on_change=update_accounts, kwargs={'from_or_to':'key_to_account_type'})
     to_account=st.selectbox('Please choose to which account', options=st.session_state['to_accounts'],key='key_to_account')
-    st.text(st.session_state['to_account_full'], help='Full account details that will be used')
+    st.text_area('To Account label',st.session_state['to_account_full'], help='Full account details that will be used',label_visibility='collapsed',disabled=True,height =10)
     price=st.number_input('Insert a $ amount',key='key_number_input')
     description=st.text_input("Please write a short transaction description",value=None,key='key_to_tx_description')
     clicked=st.button("Save",on_click=clicked)
