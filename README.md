@@ -35,3 +35,5 @@ There are options for docker too, I will investigate this in the future.
 **ToDo**
 Add cookies support for seamless login - https://discuss.streamlit.io/t/cookies-support-in-streamlit/16144
 Deploy via docker
+1. Fix Cookies to Streamlit native option
+2. Add account_tree.csv import/upload button if file not found

@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import csv
 import os
-import pyautogui
+# import pyautogui
 import datetime
 import polars as pl
 from streamlit_cookies_controller import CookieController
