@@ -11,18 +11,18 @@ import time
 
 st.set_page_config(layout="wide")
 
-st.markdown("""
-<style>
+# st.markdown("""
+# <style>
 
-.block-container
-{
-    padding-top: 3rem;
-    padding-bottom: 0rem;
-    margin-top: 2rem;
-}
+# .block-container
+# {
+#     padding-top: 3rem;
+#     padding-bottom: 0rem;
+#     margin-top: 2rem;
+# }
 
-</style>
-""", unsafe_allow_html=True)
+# </style>
+# """, unsafe_allow_html=True)
 
 controller = CookieController()
 
@@ -124,7 +124,7 @@ if check_password():
             fd.write("\n")
 
         msg = st.toast('Getting ready to finalise transaction...')
-        time.sleep(1)
+        time.sleep(.5)
         msg.toast('Saving transaction...')
         st.balloons()
         clicked_reset()
@@ -132,7 +132,7 @@ if check_password():
     def clicked_transaction_clear():
         if clear_contents_check:
             msg = st.toast('Getting ready to delete transactions...')
-            time.sleep(1)
+            time.sleep(.5)
             msg.toast('Transactions deleted...')
             open("transaction_output.csv",'w').close()
             st.snow()
@@ -140,10 +140,27 @@ if check_password():
 
     #Populate accounts with list of items selectable
     accounts=[]
-    with open('account_tree.csv', newline='') as csvfile:
-        datareader = csv.reader(csvfile, delimiter=',', quotechar='|')
-        for row in datareader:
-            accounts.append(row[1])
+    path="account_tree.csv"
+    if not os.path.exists(path):
+        uploaded_file=st.file_uploader('Please upload GNUCash Account Tree in CSV format',"csv",False,)
+        if uploaded_file is not None:
+            bytes_data = uploaded_file.getvalue()
+            st.write(bytes_data)
+
+            # Can be used wherever a "file-like" object is accepted:
+            dataframe = pd.read_csv(uploaded_file)
+            dataframe.to_csv('account_tree.csv')
+            st.write(dataframe)
+
+            # with open('account_tree.csv', 'w+', newline='') as csvfile:
+            #     writer = csv.writer(csvfile)
+            #     writer.writerows(data)
+    if os.path.exists(path):
+        print('GOing to open the file now')
+        with open('account_tree.csv', newline='') as csvfile:
+            datareader = csv.reader(csvfile, delimiter=',', quotechar='|')
+            for row in datareader:
+                accounts.append(row[1])
 
     #Initialise the account selections
     from_accounts=accounts
